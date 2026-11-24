@@ -1,0 +1,37 @@
+# --- Sistema operativo ---
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+
+# --- Editores ---
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+
+# --- Claude Code (configuración local) ---
+.claude/settings.local.json
+
+# --- Secretos: NUNCA subir claves privadas ---
+# (js/config.js SÍ se sube: la clave "publishable/anon" es pública por diseño
+#  y GitHub Pages la necesita para conectarse a Supabase)
+.env
+.env.*
+*.pem
+*service_role*
+*secret*
+
+# --- Dependencias / herramientas (por si se agregan en el futuro) ---
+node_modules/
+.venv/
+venv/
+__pycache__/
+
+# --- Respaldos y exportaciones locales ---
+*.log
+*.csv
+respaldo-*.json
+*.db
+*.sqlite

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Bodega · Control de inventario</title>
+  <meta name="description" content="Control de inventario de bodega: insumos, lotes con vencimiento, salidas, kits en préstamo y devoluciones.">
+  <meta name="theme-color" content="#f5f6f8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111317" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div id="boot" class="boot">
+    <div class="boot-card">
+      <div class="spinner" aria-hidden="true"></div>
+      <h1>Bodega</h1>
+      <p id="boot-msg">Iniciando…</p>
+      <noscript><p>Esta aplicación necesita JavaScript.</p></noscript>
+    </div>
+  </div>
+
+  <div class="layout">
+    <aside id="nav" class="nav" aria-label="Menú principal"></aside>
+    <div id="scrim" class="scrim"></div>
+    <div class="main">
+      <header id="topbar" class="topbar"></header>
+      <main id="view" class="view"></main>
+    </div>
+  </div>
+  <nav id="tabbar" class="tabbar" aria-label="Navegación rápida"></nav>
+
+  <div id="overlay" class="overlay"></div>
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
